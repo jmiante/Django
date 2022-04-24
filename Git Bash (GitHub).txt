@@ -1,0 +1,17 @@
+Login
+
+git config --global user.name myusername
+git config --global user.email myemail
+git config --global github.user myusername
+git config --global github.token mytoken
+
+
+Adicionar arquivos
+	git add *
+
+
+comentários
+	git commit -m "Comentário"
+
+Salvar
+	git push origin master
