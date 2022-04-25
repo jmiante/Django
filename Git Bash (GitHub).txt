@@ -15,3 +15,7 @@ comentários
 
 Salvar
 	git push origin master
+
+
+Atualizar os arquivos Local
+	git pull
