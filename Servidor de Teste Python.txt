@@ -1,0 +1,9 @@
+Abre o CMD na pasta que estão seus arquivos WEB
+
+digite
+	python -m http.server 8000
+
+Isso inicia um servidor Python na porta 8000
+
+Para acessar o servidor abra o navegador e digite:
+	localhost:8000
