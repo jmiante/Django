@@ -1,0 +1,24 @@
+INSTALAÇÃO DE BIBLIOTECAS
+
+pip install django
+--- Instala o Django no seu projeto
+
+pip freeze > requeriments.txt 
+--- Salva todas as bibliotecas que está instalada no seu projeto em um arquivo de texto
+
+--------------------------------------------------------
+
+COMANDOS DJANGO NO TERMINAL
+
+django-admin startproject "nome do projeto" .
+--- Cria um projeto Django, utiliza-se o . no final do código para não criar um diretório novo.
+--- Ex: django-admin startproject django1 .
+
+python manage.py startapp "nome do app"
+-- Cria um App para o projeto (o terminal deve estar na mesma pasta do manage.py)
+-- Ex: python manage.py startapp core
+
+python manage.py runserver
+--- Inicia o Servido do Seu projeto, é possivel alterar a porta incluindo o número na frente do código
+--- python manage.py runserver 8080
+
