@@ -14,7 +14,8 @@ django-admin startproject "nome do projeto" .
 --- Cria um projeto Django, utiliza-se o . no final do código para não criar um diretório novo.
 --- Ex: django-admin startproject django1 .
 
-python manage.py startapp "nome do app"
+python manage.py startapp "nome do app" ou
+django-admin startapp "nome do app" 
 -- Cria um App para o projeto (o terminal deve estar na mesma pasta do manage.py)
 -- Ex: python manage.py startapp core
 
