@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import index, contato
 
-urlpatterns = {
+urlpatterns = [
     path('', index),
-    path('contato/', contato)
-}
+    path('contato/', contato),
+]

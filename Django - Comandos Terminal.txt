@@ -28,3 +28,6 @@ python manage.py makemigrations
 
 python manage.py migrate
 --- Executa as migrations não executadas
+
+python manage.py createsuperuser
+--- Cria um usuário administrativo
