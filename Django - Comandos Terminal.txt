@@ -23,3 +23,8 @@ python manage.py runserver
 --- Inicia o Servido do Seu projeto, é possivel alterar a porta incluindo o número na frente do código
 --- python manage.py runserver 8080
 
+python manage.py makemigrations
+--- Constroi/Atualiza o banco de dados com as informações dos Models das aplicações Django
+
+python manage.py migrate
+--- Executa as migrations não executadas
