@@ -19,3 +19,19 @@ produto.save()
 
 produto.delete()
 --- deleta o objeto do banco de dados do projeto
+
+Produto.objects.all()
+--- busca todos os produtos do banco de dados
+
+Produto.objects.count()
+--- conta quantos itens tem cadastrado
+
+Produto.objects.first()
+--- recupera o primeiro item cadastrado
+
+Produto.objects.last()
+--- recupera o último item cadastrado
+
+Produto.objects.filter(id=1)
+--- recupera registro de acordo com o filtro
+
