@@ -1,0 +1,21 @@
+SHELL Django => Console Python com o Projeto Django
+
+import core.view import index
+--- importa a classe index do app core
+
+dir(index)
+--- lista todos atribuitos da classe index
+
+from core.models import Produto
+--- Importa a classe Produto do Models
+
+com isso é possivel adicionar novos produtos pelo Shell, utilizando o Python
+
+ produto = Produto(nome='Atari 2600', preco=199.67, estoque=100)
+--- Cria um objeto da classe produto
+
+produto.save()
+--- salva o objeto no banco de dados do projeto
+
+produto.delete()
+--- deleta o objeto do banco de dados do projeto

@@ -31,3 +31,11 @@ python manage.py migrate
 
 python manage.py createsuperuser
 --- Cria um usuário administrativo
+
+python manage.py
+--- Lista todas opções do manage.py
+
+python manage.py shell
+--- abre o shell do django 
+
+
