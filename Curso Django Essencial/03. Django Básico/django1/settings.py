@@ -23,6 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a4(4dy8=c=-o8n(coygs22_wr%3%zk-g_64vv-u+wy7f&x8^2+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = TRUE => DESENVOLVIMENTO
+# DEBUG = FALSE => PRODUÇÃO
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # Não recomendável o '*' significa que vai acessar em qualquer servidor
@@ -118,4 +120,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'  # Usado Durante o Desenvolvimento
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Usado Durante a Produção
