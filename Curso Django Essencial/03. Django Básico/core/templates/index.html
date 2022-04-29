@@ -31,9 +31,18 @@
            <tr>
                <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
                <td>{{ produto.preco }}</td>
-           </tr>
+          </tr>
         {% endfor %}
     </tbody>
 </table>
+
+<hr>
+
+<button onclick="teste()">Clique-me</button>
+
+<hr>
+<img src="{% static 'images/django.png' %}" alt="">
+
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
