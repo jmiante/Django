@@ -122,3 +122,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # Usado Durante o Desenvolvimento
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Usado Durante a Produção
+
+LOGOUT_REDIRECT_URL = 'index'
