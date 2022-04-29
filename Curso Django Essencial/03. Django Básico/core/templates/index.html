@@ -8,41 +8,42 @@
 </head>
 <body>
 
-<h1 >Index</h1>
+<center>
+    <h1 >Index</h1>
 
-<h2>{{curso}}</h2>
-<p>{{outro}}</p>
+    <h2>{{curso}}</h2>
+    <p>{{outro}}</p>
 
-<hr>
+    <hr>
 
-<p>{{user}}</p>
+    <p>{{user}}</p>
 
-<hr>
+    <hr>
 
-<table>
-    <thead>
-        <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for produto in produtos %}
-           <tr>
-               <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
-               <td>{{ produto.preco }}</td>
-          </tr>
-        {% endfor %}
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produto in produtos %}
+               <tr>
+                   <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                   <td>{{ produto.preco }}</td>
+              </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
-<hr>
+    <hr>
 
-<button onclick="teste()">Clique-me</button>
+    <button onclick="teste()">Clique-me</button>
 
-<hr>
-<img src="{% static 'images/django.png' %}" alt="">
-
+    <hr>
+    <img src="{% static 'images/django.png' %}" alt="">
+</center>
 <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
