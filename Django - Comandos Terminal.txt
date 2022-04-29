@@ -38,4 +38,6 @@ python manage.py
 python manage.py shell
 --- abre o shell do django 
 
-
+python manage.py collectstatic
+--- coleta todos os arquivos staticos e cria a pasta na raiz staticfiles para produção dos arquivos staticos
+--- por padrão o servidor do django não serve arquivos staticos em produção
