@@ -1,0 +1,61 @@
+https://www.heroku.com/
+
+Após finalizar o desenvolvimento, rodar as migrations e migrate, rodar o staticfiles inicia o processo de publicação
+
+1. Na configuração alterar o DEBUG para False
+
+2. Alterar o HOST para o dominio, caso não saiba deixe com * (Qualquer um)
+
+3. Instale as bibliotecas whitenoise e gunicorn
+	whitenoise => carrega arquivos staticos na produção
+	gunicor => servidor para aplicações em produção
+
+4. Nas configurações adicione o whitenoise no MIDDLEWARE, abaixo do SecurityMiddleware (1ª linha)
+	'whitenoise.middleware.WhiteNoiseMiddleware', => 2ª linha
+
+5. Crie o arquivo .gitignore com os dados
+__pycache__
+*.*~
+ *.pyc
+.idea
+
+6. No terminal rode 
+	git init
+	git status
+	git add *
+	git commit -m 'Projeto Finalizado'
+
+7. Acesso o Heroku e faça login
+
+8. Baixe o cliente Heroku
+https://devcenter.heroku.com/articles/getting-started-with-python#set-up
+
+9. Crie um arquivo chamado runtime.txt na raiz do projeto
+Adicione a versão do Python no arquivo
+python-3.8.8
+
+10. atualize o requirements
+pip freeze > requeriments.txt
+
+11. Crie um arquivo chamado Procfile na raiz do projeto
+adicione os dados do wsgi
+web: gunicorn nome_projeto.wsgi --log-file -
+Exemplo:
+	web: gunicorn django1.wsgi --log-file -
+
+12. Instale o Cliente do Heroku no Windows (caso já tenha só pular essa etapa)
+
+13. No PyCharm logue com o Heroku
+	heroku login
+
+14. Crie um projeto no Heroku -- Não pode ser o mesmo nome de outras aplicações
+	heroku create "nome_projeto_heroku" --buildpack heroku/python
+Ex:
+	heroku create djangobasicojhm --buildpack heroku/python
+
+15. Subir os dados para o Heroku
+	git push heroku master
+
+16. Altere o host para o host do heroku da aplicação
+	djangobasicojhm.herokuapp.com
+
