@@ -1,1 +1,2 @@
-pip install django whitenoise gunicorn django-bootstrap4 django-stdimage
+pip install django whitenoise gunicorn django-bootstrap4 django-stdimage PyMySQL mysqlclient
+pip install dj_database_url psycopg2-binary

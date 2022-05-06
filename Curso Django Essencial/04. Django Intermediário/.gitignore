@@ -1,0 +1,11 @@
+__pycache__
+
+venv39
+
+venv
+
+.idea
+
+*.*~
+
+*.pyc
