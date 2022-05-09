@@ -1,0 +1,47 @@
+1. Criar o arquivo .gitignore na raiz do projeto
+    Serve para ignorar alguns arquivos na hora da publicação, digite as seguintes informações no arquivo
+
+__pycache__
+
+*.*~
+
+*.pyc
+
+.env
+
+.idea
+
+template/*
+
+
+2. prepare o WSGI para arquivos Staticos com o DJ-STATICS
+
+3. Prepare o Banco de dados
+
+4. Crie um repositório local -- git init
+
+5. Adicione todos os dados no git -- git add .
+
+6. Salve a adição -- git commit -m "Observação"
+
+7. Faça login com o Heroku -- heroku login
+
+8. Crie um arquivo runtime com a versão do Python
+
+9. Crie um arquivo com o nome Procfile com a configuração WSGI
+web: gunicorn fusion.wsgi --log-file -
+
+Onde está fusion é o nome do projeto
+
+11. Refaça os passos do git (5 e 6) para adicionar os novos arquivos de configuração
+
+10. Crie um projeto no Heroku -- heroku create nomeapp --buildpack heroku/python
+
+11. Altere o HOST do projeto para o da aplicação Heroku criada
+
+12. Altere o DEBUG para False
+
+13. Publique no HEROKU -- git push heroku master
+
+
+
