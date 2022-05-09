@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-91jlwp7!^%#m(9=pnea_25*o63^829lv6%r@ryf$ymrksgxeq='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -32,14 +32,17 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'core',
+
+    'django_adminlte',
+    'django_adminlte_theme',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'core'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +82,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # https://www.elephantsql.com
 # postgres://username:password@hostname/databasename
 # postgres://bhwfbsxb:F1g-9uLZcQcB_7LMAm1oD9Lj_W53-Lnp@kesavan.db.elephantsql.com/bhwfbsxb
-"""
+
 
 DATABASES = {
     'default': {
@@ -98,7 +101,7 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-
+"""
 
 
 # Password validation
