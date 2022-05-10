@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <form class="form-signin" method="post">
+        {% csrf_token %}
+        <img class="mb-4" src="https://icons.iconarchive.com/icons/martz90/circle/256/camera-icon.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Informe seus dados</h1>
+
+        <label for="userame" class="sr-nly">Login</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Informe Seu Login" required autofocus>
+
+        <label for="password" class="sr-only">Senha</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Informe sua Senha" required>
+
+        <button class="btn btn-lg btn-block btn-primary" type="submit">Acessar</button>
+        <p class="mt-5 mb-3 text-muted">&copy: {% now 'Y' %}</p>
+    </form>
+</div>
+
+{% endblock %}
