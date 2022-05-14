@@ -1,0 +1,3 @@
+django
+django-chartjs
+django-bootstrap4
