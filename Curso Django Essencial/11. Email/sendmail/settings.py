@@ -126,11 +126,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackEnd"
 
-EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.office365.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'djangomiante@gmail.com'
-EMAIL_HOST_PASSWORD = 'lhufzoeborxkpkcj'
+EMAIL_HOST_USER = 'email@office365.com.br'
+EMAIL_HOST_PASSWORD = 'senha_emmail'
+#EMAIL_HOST_USER = 'djangomiante@gmail.com'
+#EMAIL_HOST_PASSWORD = 'lhufzoeborxkpkcj'
 
 
 # Configurar Gmail para permitir utilizar programas para enviar email
