@@ -1,4 +1,6 @@
 from random import randint
+
+from django.shortcuts import render
 from django.views.generic import TemplateView
 from chartjs.views.lines import BaseLineChartView
 
@@ -74,3 +76,18 @@ class DadosJSONView(BaseLineChartView):
             dados.append(dado)
         return dados
 
+
+def RenderChart(request):
+
+    context = {
+        'values': [
+            20,
+            20,
+            30,
+            75,
+            20,
+            15
+        ]
+    }
+
+    return render(request, 'chart.html', context)
