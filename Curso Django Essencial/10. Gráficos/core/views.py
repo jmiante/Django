@@ -90,4 +90,4 @@ def RenderChart(request):
         ]
     }
 
-    return render(request, 'chart.html', context)
+    return render(request, 'chart_includes.html', context)

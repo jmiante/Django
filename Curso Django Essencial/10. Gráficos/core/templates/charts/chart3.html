@@ -1,0 +1,29 @@
+
+<center>
+    <h1>ChartJs 3</h1>
+    <canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
+</center>
+
+<script>
+var xValues = ["Editando", "Pendente", "Confirmado", "Autorizado"];
+var yValues = [10, 15, 20, 15];
+var barColors = ["gray", "yellow", "blue", "green"];
+
+new Chart("myChart3", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+  legend: {display: false},
+    title: {
+      display: true,
+      text: "Status Notas em Aberto"
+    }
+  }
+});
+</script>

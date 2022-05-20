@@ -1,0 +1,29 @@
+
+<center>
+    <h1>ChartJs 1</h1>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+</center>
+
+<script>
+var xValues = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+var yValues = {{values}};
+var barColors = "blue";
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Histórico de Lançamentos"
+    }
+  }
+});
+</script>
