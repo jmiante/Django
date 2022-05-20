@@ -91,3 +91,7 @@ def RenderChart(request):
     }
 
     return render(request, 'chart_includes.html', context)
+
+
+def RenderPlotly(request):
+    return render(request, 'plotly.html')

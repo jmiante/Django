@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+<center>
+<h1>Plotly</h1>
+<a href="https://plotly.com/javascript/">Site Plotly JS</a>
+
+<hr>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yArray = [55, 49, 44, 24, 15];
+
+var layout = {title:"World Wide Wine Production"};
+
+var data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+<hr>
+
+<div id="myPlot2" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yArray = [55, 49, 44, 24, 15];
+
+var data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar"
+}];
+
+var layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot2", data, layout);
+</script>
+
+
+<hr>
+
+
+<div id="myPlot3" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = [55, 49, 44, 24, 15];
+var yArray = ["Italy ", "France ", "Spain ", "USA ", "Argentina "];
+
+var data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"h",
+  marker: {color:"rgba(255,0,0,0.6)"}
+}];
+
+var layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot3", data, layout);
+</script>
+
+<hr>
+
+<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<script>
+    var data = [
+  {
+    domain: { x: [0, 1], y: [0, 1] },
+    value: 450,
+    title: { text: "Speed" },
+    type: "indicator",
+    mode: "gauge+number",
+    delta: { reference: 400 },
+    gauge: { axis: { range: [null, 500] } }
+  }
+];
+
+var layout = { width: 600, height: 400 };
+Plotly.newPlot('myDiv', data, layout);
+</script>
+
+</center>
+</body>
+</html>
